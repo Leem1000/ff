@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: 0;
+}
+.header{
+    position: fixed;
+    background: #ed925d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  
+}
+.menuh{
+   
+    display:none ;
+}
+.ulmenu, .ulsubmenu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.alink, .aPasublink{
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 8px 15px;
+    color: #fff
+}
+
+
+.ulmenu{
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    width: 100%;
+    background:#ed925d;
+    justify-content: space-around;
+    align-items: center;
+}
+/*.licontainer_submenu{
+    position: relative;
+}*/
+
+.licontainer_submenu{
+    position: relative;
+}
+.ulsubmenu{
+   /* display: none; */
+   display: none;
+    position: absolute;
+    top: 31px;
+    width: 240px;
+    margin-top: .9999px;
+    padding: 2px;
+   border: .02px solid #ed925d ;
+   overflow: visible;
+   z-index: 1000;
+   /*
+   opacity: 1; /*  opacity: 1;*/
+  /* visibility: visible; *//*  visibility: visible;*/
+}
+
+
+
+.ulsubmenu.show{
+    display: block;
+}
+
+
+/*
+.licontainer_submenu:hover .ulsubmenu{
+    display: block;
+}
+/*
+.licontainer_submenu:hover .ulsubmenu{
+    opacity: 1;
+    visibility: visible;
+    transition: all .1s; /* transition: all 1s;*/
+   /*
+} */
+
+
+
+
+
+
+
+
+/*
+.licontainer_submenu.show .ulsubmenu{
+    opacity: 1;
+    visibility: visible;
+} */
+
+/*
+.ulmenu:hover .ulsubmenu{
+    display: block; /* display: block; */             
+   /* transition: all .1s;
+} */
+
+
+.ulsubmenu .limenu{
+    margin: 0px;
+   
+    width: 100%;
+    padding: 5px 17px;
+    background:#5ded77;
+    height: auto;
+}
+
+.limenu .alink{
+    color: #fff;
+    padding: 4px 9px 15px 9px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+.alink:hover{
+    color: #7a5ded;
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+
+.inicio img{
+    width: 100%;
+}
+
+@media(max-width:468px){
+    html{
+        width: 100%;
+    }
+    header{
+        background: #ed925d;
+        width: 100%;
+     
+    }
+    header .cajalogomenu img{
+        padding: 2px;
+    }
+    .menuh{
+        background: #fff;
+        margin: 0;
+        margin-right: 4px;
+        padding: 0;
+        border: solid white;
+        color: white;
+        cursor: pointer;
+        font-size: 2.0rem;
+        width: 7.0%;
+        align-items: center;
+        display: initial;
+
+    }
+
+  
+    header .navmenu{
+       
+     
+        width: 100%;
+       top: 52px;
+        margin-left: 0;
+       
+      
+        
+       
+       
+        
+    }
+
+    
+ 
+
+    .ulmenu{
+       position: absolute;
+        top: 53px;
+        left: 0;
+        width: 100%;
+      display: block;
+     
+    
+      max-height: 500px;
+       overflow-y: scroll;
+      
+      
+      
+     
+       
+     
+      
+       
+        padding-top: 2px;
+        margin-left: -100%; /*margin-left: -100%*, 0 aparece*/
+       transition: all .1s; /* transition: all 1s;*/
+      
+       
+   
+      
+      
+
+      
+    }
+
+    .limenu{
+        background: #ed925d;
+        width: 100%;
+        
+    }
+   
+    .alink, .aPasublink {
+        display:block;
+        width: 100%;
+        padding: 12px 19px;
+        color: white;
+        font-size: 1.2em;
+        text-decoration: none;
+       
+    }
+    .alink:hover, .aPasublink:hover{
+        background: black;
+        width: 100%;
+    }
+
+    .licontainer_submenu.show .ulsubmenu{
+        opacity: 1;
+        visibility: visible;
+        transition: all .1s; /* transition: all 1s;*/
+       
+    }
+
+
+    .ulsubmenu{
+        height:0px;/*height:0; auto*/
+        overflow: hidden; /*overflow:hidden; visible*/
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        top: -3px;
+       position: relative;
+       opacity: 1; /*  opacity: 1;*/
+        visibility: visible; /*  visibility: visible */               /* opacity: 1; /*  opacity: 1;*/
+                       /*  visibility: visible */
+                      
+                      
+    }
+
+   
+ 
+    .ulsubmenu .alink{
+        background: rgb(140, 71, 71);
+       padding: 12px 8px;
+    }
+
+    .mostrar{
+        margin-left: 0;
+       
+        
+        
+        
+        
+    }
+    
+    .submenu .alink:hover{
+        background: #ad925d;
+    }
+
+
+
+
+    
+    
+
+
+    
+
+
+
+/*.....................Ventana  Jason Inferior de Aviso de Cookies........................*/
+
+.aviso-cookies{
+	display: none;
+    margin-bottom: 0;
+    height: 60px;
+	background: rgb(246, 253, 255);
+	width: 100%;
+	line-height: 15%;
+	border-radius: 8px;
+	position: fixed;
+	bottom: 0px;
+	z-index: 100;
+	box-shadow: 0px 2px 20px 10px rgba(222, 222, 222, .25);
+	text-align: left;
+}
+.aviso-cookies.activo{
+	display: block;
+}
+.aviso-cookies .titulo{
+	padding-top: 13px;
+	margin-bottom: 4px;
+    margin-left: 2px;
+}
+
+.aviso-cookies .parrafo{
+	padding-top: 5px;
+	margin-bottom: px;
+    margin-left: 2px;
+    line-height: 50%;
+	
+}
+.aviso-cookies .parrafo .enlace{
+	color: #2a1690;
+	text-decoration: none;
+	font-size: 13px;
+    padding-left: 4px;
+   
+}
+.aviso-cookies .enlace:hover{
+	text-decoration: underline;
+}
+.aviso-cookies .boton{
+	width: 14%;
+    padding: 5px;
+	position: absolute;
+    right: 100px;
+    margin-bottom: 1px;
+	background: #595959;
+	border: none;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-weight: 700;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	font-size: 15px;
+}
+.aviso-cookies .boton:hover{
+	background: #000;
+}
+
+
+}
